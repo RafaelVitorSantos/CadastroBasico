@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titulo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <form class="center">
+    <div class="container" id="form-container">
+      <div class="row-6">
+        <div class="col">
+          <h1 for="Email">Digite seu Email</h1>
+          <input class="input-text" type="text" name="Email" placeholder="Seu Email">
+        </div>
+        <div class="col">
+          <h1 for="EmailConfirm">Confirme seu Email</h1>
+          <input class="input-text" type="text" name="EmailConfirm" placeholder="Seu Email">
+        </div>
+      </div>
+      <div class="row-6">
+        <div class="col">
+          <h1 for="Password">Digite sua Senha</h1>
+          <input class="input-text" type="password" name="Password" placeholder="Sua Senha">
+        </div>
+        <div class="col">
+          <h1 for="PasswordConfirm">Confirme sua Senha</h1>
+          <input class="input-text" type="password" name="PasswordConfirm" placeholder="Sua Senha">
+        </div>
+      </div>
+      <div class="row-6 margin-lg">
+        <div class="col">
+          <button class="btn btn-primary" type="submit" onclick="enviar(Email.value, EmailConfirm.value, Password.value, PasswordConfirm.value)">Enviar</button>
+        </div>
+        <div class="col">
+          <button class="btn" type="reset" onclick="limpar()">Limpar Cadastros</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
